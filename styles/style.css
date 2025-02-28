@@ -1,0 +1,46 @@
+body {
+  background-color: #fefaef !important;
+}
+
+.card-header {
+  background-color: #27355c !important;
+}
+
+.container {
+  background-color: #fefaef !important;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  flex-direction: row !important;
+}
+
+.nav {
+  flex-direction: column !important;
+}
+
+.nav-link {
+  color: #8d99a5 !important;
+  font-size: 20px !important;
+  border-radius: var(--bs-nav-tabs-border-radius) !important;
+}
+
+.quiz-bg {
+  background-image: url("../img/brainbg.jpg");
+  background-position: center;
+}
+
+.card-body {
+  width: 30rem;
+}
+
+.question-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  padding-top: 12px;
+}
