@@ -1,5 +1,7 @@
 let currentQuestionIndex = 0;
 let correctAnswerScore = 0;
+let audioSuccess = new Audio("./audio/success.mp3");
+let audioFail = new Audio("./audio/error.mp3");
 
 function init() {
   setTotalQuestionsNumber(questions);
@@ -28,9 +30,11 @@ function answer(answerIndex) {
   let answerParentNodeRef = document.getElementById(answerId).parentNode;
 
   if (answerIndex == question.correct_answer) {
+    audioSuccess.play();
     answerParentNodeRef.classList.add("bg-success");
     correctAnswerScore += 1;
   } else {
+    audioFail.play();
     answerParentNodeRef.classList.add("bg-danger");
     highlightCorrectAnswer();
   }
