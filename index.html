@@ -9,6 +9,7 @@
     />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Quiz App</title>
+    <script src="./scripts/questions.js"></script>
     <script src="./scripts/script.js"></script>
 
     <!-- Import Bootstrap -->
@@ -24,7 +25,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body onload="init()">
     <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
         <span class="navbar-brand mb-0 h1">QuizApp</span>
@@ -54,22 +55,33 @@
           </ul>
         </div>
         <div class="card-body quiz-bg">
-          <h5 class="card-title">Frage</h5>
+          <h5 class="card-title" id="question_text">Frage</h5>
 
-          <div class="card mt-2">
-            <div class="card-body">Antwort I</div>
+          <div class="card mt-2" onclick="answer(1)">
+            <div class="card-body quiz-answer-card" id="answer_1">
+              Antwort I
+            </div>
           </div>
-          <div class="card mt-2">
-            <div class="card-body">Antwort II</div>
+          <div class="card mt-2" onclick="answer(2)">
+            <div class="card-body quiz-answer-card" id="answer_2">
+              Antwort II
+            </div>
           </div>
-          <div class="card mt-2">
-            <div class="card-body">Antwort III</div>
+          <div class="card mt-2" onclick="answer(3)">
+            <div class="card-body quiz-answer-card" id="answer_3">
+              Antwort III
+            </div>
           </div>
-          <div class="card mt-2">
-            <div class="card-body">Antwort IV</div>
+          <div class="card mt-2" onclick="answer(4)">
+            <div class="card-body quiz-answer-card" id="answer_4">
+              Antwort IV
+            </div>
           </div>
           <div class="question-footer my-2">
-            <div><b>1</b> von <b>5</b> Fragen</div>
+            <div>
+              <b id="current_question">1</b> von
+              <b id="total_questions_number">5</b> Fragen
+            </div>
             <a href="#" class="btn btn-primary">Nächste Frage</a>
           </div>
         </div>
