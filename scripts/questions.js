@@ -76,6 +76,15 @@ let questionsHandball = [
     answer_4: "Heiner Brandt",
     correct_answer: 4,
   },
+  {
+    question:
+      "Wie lange dauert eine reguläre Halbzeit im Handball bei den Herren?",
+    answer_1: 20,
+    answer_2: 25,
+    answer_3: 30,
+    answer_4: 35,
+    correct_answer: 3,
+  },
 ];
 
 let questionsHannover = [
@@ -99,11 +108,28 @@ let questionsHannover = [
   },
   {
     question:
+      "Wie heißt der bekannte Stadtwald in Hannover, der als größter Stadtwald Europas gilt?",
+    answer_1: "Englischer Garten",
+    answer_2: "Tiergarten",
+    answer_3: "Eilenriede",
+    answer_4: "Grunewald",
+    correct_answer: 3,
+  },
+  {
+    question:
       "Welche ausländische Hauptstadt hat die kürzeste Entfernung zu Hannover auf gewöhnlichen Straßenwegen?",
     answer_1: "Kopenhagen",
     answer_2: "Prag",
     answer_3: "Brüssel",
     answer_4: "Amsterdam",
+    correct_answer: 4,
+  },
+  {
+    question: "Wie heißt ein bekannter Fußballverein aus Hannover?",
+    answer_1: "Arminia Bierzelt",
+    answer_2: "Ajax Dauerstramm",
+    answer_3: "FC Lieber am Pool",
+    answer_4: "Hannover 96",
     correct_answer: 4,
   },
 ];
@@ -116,6 +142,24 @@ let questionsPhysik = [
     answer_2: "Gravitationsbeschleunigung",
     answer_3: "Lichtgeschwindigkeit",
     answer_4: "Statischer Luftdruck",
+    correct_answer: 3,
+  },
+  {
+    question:
+      "Welche der folgenden Kräfte ist eine fundamentale Wechselwirkung der Physik?",
+    answer_1: "Zentripetalkraft",
+    answer_2: "Gravitationskraft",
+    answer_3: "Reibungskraft",
+    answer_4: "Zentrifugalkraft",
+    correct_answer: 2,
+  },
+  {
+    question:
+      "Welche Einheit wird verwendet, um die elektrische Ladung zu messen?",
+    answer_1: "Ampere",
+    answer_2: "Volt",
+    answer_3: "Coulomb",
+    answer_4: "Watt",
     correct_answer: 3,
   },
 ];
