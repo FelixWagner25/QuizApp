@@ -76,3 +76,7 @@ body {
 .progress-bar {
   background-color: #27355c !important;
 }
+
+.active {
+  font-weight: bold;
+}

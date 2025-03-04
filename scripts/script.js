@@ -4,6 +4,8 @@ let audioSuccess = new Audio("./audio/success.mp3");
 let audioFail = new Audio("./audio/error.mp3");
 
 function init() {
+  setSectionQuestions("meteorologie");
+  activateMenuLnk("meteorologie");
   setTotalQuestionsNumber(questions);
   showCurrentQuestion();
 }
@@ -111,4 +113,41 @@ function setProgressBar() {
 
   let progressbarRef = document.getElementById("progress_bar");
   progressbarRef.style = "width: " + progressValuePercent + "%";
+}
+
+function activateSection(sectionId) {
+  deactivateMenuLnks();
+  activateMenuLnk(sectionId);
+  setSectionQuestions(sectionId);
+  repeatQuiz();
+}
+
+function activateMenuLnk(linkId) {
+  document.getElementById(linkId).classList.add("active");
+}
+
+function deactivateMenuLnks() {
+  for (let indexId = 0; indexId < quizSections.length; indexId++) {
+    document.getElementById(quizSections[indexId]).classList.remove("active");
+  }
+}
+
+function setSectionQuestions(sectionId) {
+  switch (sectionId) {
+    case "meteorologie":
+      questions = questionsMeteorologie;
+      break;
+    case "handball":
+      questions = questionsHandball;
+      break;
+    case "hannover":
+      questions = questionsHannover;
+      break;
+    case "physik":
+      questions = questionsPhysik;
+      break;
+    default:
+      questions = questionsMeteorologie;
+      break;
+  }
 }
