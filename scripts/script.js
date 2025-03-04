@@ -3,6 +3,9 @@ let correctAnswerScore = 0;
 let audioSuccess = new Audio("./audio/success.mp3");
 let audioFail = new Audio("./audio/error.mp3");
 
+audioSuccess.volume = 0.15;
+audioFail.volume = 0.5;
+
 function init() {
   setSectionQuestions("meteorologie");
   activateMenuLnk("meteorologie");
